@@ -1,0 +1,934 @@
+/* HEADER STYLING */
+.header {
+  background-color: rgb(55, 130, 139);
+  height: 100px;
+  width: 100%;
+  margin-top: -8px;
+  margin-left: -8px;
+  margin-right: -8px;
+  display: grid;
+  grid-template-columns: 1fr 3fr 3fr 3fr 1fr;
+  position: fixed;
+  z-index: 99;
+}
+
+#headerBenTrzLogoSection {
+  text-align: center;
+  margin: auto;
+}
+
+#headerBenTrzLogoAnchor {
+  cursor: pointer;
+}
+
+#headerBenTrzLogoImage {
+  width: 100px;
+  height: 50px;
+  padding-left: 5px;
+}
+
+.headerSections {
+  margin: auto;
+  text-align: center;
+}
+
+.headerTextButton {
+  padding: 0px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.headerText {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(19, 51, 55);
+  cursor: pointer;
+  transition: opacity 0.1s;
+  transition: color 0.1s;
+}
+
+.headerText:hover {
+  opacity: 0.6;
+}
+
+.headerText:active {
+  color: white;
+}
+
+#headerLinkedInLogoSection {
+  padding-top: 30px;
+  text-align: center;
+}
+
+#headerLinkedInLogoAnchor {
+  cursor: pointer;
+}
+
+#headerLinkedInLogoImage {
+  width: 35px;
+  height: 35px;
+}
+
+.headerPage {
+  color: black;
+  display: none;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  #headerBenTrzLogoImage {
+    width: 12vw;
+    height: 6vw;
+  }
+  .header {
+    grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  }
+  .headerText {
+    font-size: 18px;
+  }
+}
+
+
+/* LANDING PAGE STYLING */
+#landingPage {
+  height: calc(100vh - 108px);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#landingPageHeaderDiv {
+  text-align: center;
+  padding-left: 230px;
+  padding-top: 100px;
+}
+
+#landingPageSubHeaderDiv {
+  display: flex;
+}
+
+#landingPageSubHeaderTextOne {
+  width: 50%;
+  text-align: right;
+  padding-left: 298px;
+}
+
+#landingPageSubHeaderTextTwo {
+  width: 50%;
+}
+
+.landingPageHeaderText {
+  display: inline-block;
+  font-size: 120px;
+  font-family: 'Handjet', cursive;
+  color: black;
+  margin-bottom: -50px;
+}
+
+#landingPageHeaderCinskiText {
+  opacity: 0.1;
+}
+
+.landingPageSubHeaderText {
+  display: inline-block;
+  font-size: 30px;
+  font-family: 'Handjet', cursive;
+  color: black;
+  margin: 0px;
+}
+
+#landingPageSubHeaderTextTwo {
+  opacity: 0.1;
+}
+
+@media (max-width: 800px) {
+  .landingPageHeaderText {
+    font-size: 16vw;
+  }
+  #landingPageHeaderDiv {
+    padding-left: 0px;
+  }
+  #landingPageSubHeaderTextOne {
+    padding-left: 45px;
+  }
+  .landingPageSubHeaderText {
+    font-size: 5vw;
+  }
+}
+
+
+/* ABOUT-ME PAGE STYLING */
+#aboutPageLayout {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-top: 92px;
+}
+
+#aboutBioSection {
+  min-height: calc(100vh - 250px);
+  display: grid;
+  grid-template-columns: 2fr 4fr 1fr;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-bottom: 8px;
+  align-items: center;
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+
+#aboutBioImageSection {
+  margin-left: auto;
+  padding-left: 20px;
+}
+
+#aboutBioTextSection {
+  padding-left: 50px;
+  padding-right: 150px;
+}
+
+#aboutBioImage {
+  width: 500px;
+  border-radius: 20px;
+  border-color: black;
+  box-shadow: 5px 5px 15px;
+  border-width: 3px;
+  border-style: solid;
+}
+
+.aboutPageText{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#aboutBioTextHeader {
+  font-size: 100px;
+  margin: auto;
+}
+
+#aboutBioTextSubHeader {
+  font-size: 30px;
+  margin: auto;
+}
+
+#aboutSkillsSection {
+  min-height: calc(100vh - 95px);
+  background-color: cadetblue;
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.aboutMaterialSection {
+  min-height: calc(100vh - 300px);
+  width: 70%;
+  margin: auto;
+  margin-right: 25%;
+  margin-top: 75px;
+  padding-bottom: 50px;
+}
+
+.aboutTitles {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  color: black;
+}
+
+.aboutTitleSections {
+  margin-bottom: -70px;
+}
+
+.aboutSkillsSubTitles {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: black;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.aboutSkillsSubTitles::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.aboutSkillsSubTitles:hover::after{
+  width: 20%;
+}
+
+.aboutSkillsSubTitles.activeTab::after{
+  width: 100%;
+}
+
+.aboutSubTitlesSections {
+  display: flex;
+}
+
+.aboutExperienceSubTitles {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  color: black;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  position: relative;
+}
+
+.aboutExperienceSubTitles::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: black;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.aboutExperienceSubTitles:hover::after{
+  width: 20%;
+}
+
+.aboutExperienceSubTitles.activeTab::after{
+  width: 100%;
+}
+
+.aboutTabContents {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 26px;
+  list-style: none;
+  margin: 5px 30px;
+  width: 100px;
+}
+
+.aboutSkillLevelBarOuter {
+  position: relative;
+  left: 160px; 
+  top: -32px;
+  background: rgb(55,130,139);
+  background: linear-gradient(90deg, rgba(55,130,139,1) 40%, rgba(47,79,83,1) 100%);
+  border-radius: 12px;
+  height: 24px;
+  width: calc(100% - 100px);
+}
+
+.aboutSkillLevelBarInner {
+  position: relative;
+  background-color: rgba(85, 148, 150, 1);
+  height: 24px;
+  border-radius: 0 12px 12px 0;
+}
+
+#aboutSkillLevelBarSkillsLanguagesCPP {
+  left: 85%;        /* Percentage fill of bar (level of skill) */
+  width: 17%;       /* Ensure this is always (102 - left_value) */
+}
+
+#aboutSkillLevelBarSkillsLanguagesCS {
+  left: 95%;
+  width: 7%;
+}
+
+#aboutSkillLevelBarSkillsLanguagesPython {
+  left: 75%;
+  width: 27%;
+}
+
+#aboutSkillLevelBarSkillsLanguagesHTMLCSS {
+  left: 55%;
+  width: 47%;
+}
+
+#aboutSkillLevelBarSkillsLanguagesJS {
+  left: 45%;
+  width: 57%;
+}
+
+#aboutSkillLevelBarSkillsLanguagesMatlab {
+  left: 65%;
+  width: 37%;
+}
+
+#aboutSkillLevelBarSkillsTechnicalMVVM {
+  left: 65%;     
+  width: 37%;       
+}
+
+#aboutSkillLevelBarSkillsTechnicalOOP {
+  left: 70%;
+  width: 32%;
+}
+
+#aboutSkillLevelBarSkillsTechnicalAgile {
+  left: 95%;
+  width: 7%;
+}
+
+#aboutSkillLevelBarSkillsTechnicalGit {
+  left: 90%;
+  width: 12%;
+}
+
+#aboutSkillLevelBarSkillsTechnicalConfluence {
+  left: 90%;
+  width: 12%;
+}
+
+#aboutSkillLevelBarSkillsTechnicalVisualStudio {
+  left: 95%;
+  width: 7%;
+}
+
+#aboutSkillLevelBarSkillsPersonalResilience {
+  left: 80%;
+  width: 22%;
+}
+
+#aboutSkillLevelBarSkillsPersonalCommunication {
+  left: 90%;
+  width: 12%;
+}
+
+#aboutSkillLevelBarSkillsPersonalProblemSolving {
+  left: 90%;
+  width: 12%;
+}
+
+#aboutSkillLevelBarSkillsPersonalBouldering {
+  left: 50%;
+  width: 52%;
+}
+
+#aboutSkillLevelBarSkillsPersonalTennis {
+  left: 60%;
+  width: 42%;
+}
+
+.aboutSkillsTab {
+  display: none;
+}
+
+.aboutSkillsTab.activeTab{
+  display: block;
+}
+
+.aboutExperienceTab {
+  display: none;
+}
+
+.aboutExperienceTab.activeTab{
+  display: block;
+}
+
+#aboutExperienceSection {
+  min-height: calc(100vh - 100px);
+  margin-left: -8px;
+  margin-right: -8px;
+  margin-top: -8px;
+  margin-bottom: 8px;
+}
+
+.aboutExperienceText {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: 400;
+  font-size: 26px;
+  color: black;
+  margin-right: 30px;
+  margin-bottom: 40px;
+  cursor: pointer;
+  position: relative;
+  margin: 5px 30px;
+}
+
+.aboutExperienceJobTitle {
+  font-weight: 700;
+}
+
+.aboutExperienceCompany {
+  font-size: 22px;
+}
+
+.aboutExperienceDuration {
+  color: cadetblue;
+  font-size: 20px;
+}
+
+.aboutExperienceDescription {
+  display: flex;
+  padding-top: 4px;
+}
+
+.aboutExperienceEducationGrade {
+  font-weight: 700;
+}
+
+.aboutExperienceEducationLocation {
+  color: cadetblue;
+  display: flex;
+  padding-top: 4px;
+}
+
+#aboutScrollController {
+  height: calc(100vh - 200px);
+  width: 300px;
+  margin-top: 50px;
+  position: fixed;
+  right: 60px;
+}
+
+#aboutScrollControllerLineOne {
+  border-top: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  height: calc(50vh - 100px);
+  width: 30px;
+  position: absolute;
+  right: 0;
+  border-radius: 5px;
+}
+
+#aboutScrollControllerLineTwo {
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  height: calc(50vh - 100px);
+  width: 30px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+}
+
+.aboutScrollControllerSections {
+  text-align: right;
+  padding-right: 40px;
+}
+
+.aboutScrollControllerTextButton {
+  padding: 0px;
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.aboutScrollControllerText {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: black;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: opacity 0.1s;
+  transition: color 0.1s;
+}
+
+.aboutScrollControllerText:hover {
+  opacity: 0.4;
+}
+
+.aboutScrollControllerText:active {
+  color: black;
+}
+
+#aboutScrollControllerIntro {
+  margin-top: -16px;
+}
+
+#aboutScrollControllerSkills {
+  padding-top: calc(50vh - 125px);
+}
+
+#aboutScrollControllerExperience {
+  padding-top: calc(50vh - 142px);
+}
+
+@media (max-width: 1500px) {
+  #aboutBioTextHeader{
+    font-size: 6vw;
+  }
+  #aboutBioTextSubHeader{
+    font-size: 2vw;
+  }
+  #aboutBioImage{
+    width: 30vw;
+  }
+}
+
+@media (max-width: 1030px) {
+  #aboutBioTextHeader {
+    font-size: 10vw;
+    margin-top: -200px;
+  }
+  #aboutBioTextSubHeader {
+    font-size: 3.5vw;
+  }
+  #aboutBioSection {
+    grid-template-columns: 7fr;
+  }
+  #aboutScrollController {
+    display: none;
+  }
+  #aboutBioImage {
+    display: none;
+  }
+  .aboutTitles {
+    font-size: 10vw;
+  }
+}
+
+@media (max-width: 800px) {
+  #aboutBioTextHeader {
+    font-size: 55px;
+    margin-top: -50px;
+  }
+  #aboutBioTextSubHeader {
+    font-size: 25px;
+  }
+  #aboutBioSection {
+    grid-template-columns: 7fr;
+    align-items: start;
+  }
+  #aboutScrollController {
+    display: none;
+  }
+  #aboutBioImage {
+    display: none;
+  }
+  #aboutBioTextSection {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .aboutTitles {
+    font-size: 55px;
+  }
+  #aboutExperienceTitle {
+    letter-spacing: -2px;
+    padding-bottom: 16px;
+    padding-left: 10px;
+  }
+  #aboutSkillsTitle {
+    padding-left: 10px;
+    padding-bottom: 16px;
+  }
+  .aboutSkillsSubTitles {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  .aboutExperienceSubTitles {
+    font-size: 24px;
+    margin-right: 16px;
+  }
+  #aboutExperienceMaterialSection {
+    width: 100%;
+    margin-top: 0px;
+  }
+  #aboutSkillsMaterialSection {
+    width: 75%;
+    margin-top: 0px;
+  }
+  .aboutSubTitlesSections {
+    padding-left: 13px;
+  }
+}
+
+@media (max-height: 800px) {
+  .aboutMaterialSection {
+    margin-top: 2vh;
+  }
+}
+
+@media (max-height: 300px) {
+  #aboutBioSection {
+    grid-template-columns: 2fr 5fr;
+  }
+  #aboutScrollController {
+    display: none;
+  }
+}
+
+
+/* PORTFOLIO PAGE STYLING */
+#portfolioPage {
+  min-height: calc(100vh - 108px);
+}
+
+#portfolioTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  max-width: 1300px;
+  width: calc(100% - 20px);
+  justify-content: center;
+  align-items: center;
+  padding-top: 150px;
+  padding-bottom: 50px;
+  margin: auto;
+}
+
+.portfolioTab {
+  background-color: cadetblue;
+  height: 360px;
+  width: 400px;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.portfolioTab img {
+  align-self: center;
+  height: 360px;
+  width: 400px;
+  border-radius: 8px;
+  transition: 0.5s;
+}
+
+.portfolioTab h2 {
+  padding: 0px 40px;
+}
+
+.portfolioTab:hover img {
+  transform: scale(1.05);
+}
+
+.portfolioTab:hover .portfolioTabHeader {
+  height: 360px;
+}
+
+.portfolioTabHeader {
+  display: flex;
+  position: absolute;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(19, 51, 55);
+  background: linear-gradient(cadetblue, rgba(95, 158, 160, 0.75));
+  width: 400px;
+  height: 0px;
+  border-radius: 8px;
+  margin: auto;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  transition: height 0.5s;
+  top: 0;
+  left: 0;
+}
+
+.subPageLinks {
+  position: relative;
+  display: inline-block;
+}
+
+@media (max-width: 865px) {
+  .portfolioTab {
+    height: 270px;
+    width: 300px;
+  }
+  .portfolioTab img {
+    height: 270px;
+    width: 300px;
+  }
+  .portfolioTabHeader {
+    width: 300px;
+  }
+  .portfolioTab:hover .portfolioTabHeader {
+    height: 270px;
+  }
+}
+
+@media (max-width: 490px) {
+  .portfolioTabHeader {
+    height: 270px;
+    background: linear-gradient(cadetblue, rgba(95, 158, 160, 0.5));
+  }
+}
+
+
+/* CONTACT PAGE STYLING */
+
+#contactPageLayoutDiv {
+  padding-top: 130px;
+  padding-bottom: 50px;
+}
+
+#contactPageTextSection {
+  max-width: 60%;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+#contactPageText {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: rgb(19, 51, 55);
+}
+
+#contactFormDiv {
+  background-color: cadetblue;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 60%;
+  margin: auto;
+}
+
+.contactFormGroup {
+  margin-bottom: 20px;
+}
+
+#contactFormDiv label {
+  display: block;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: rgb(19, 51, 55);
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: calc(100% - 36px);
+  padding: 18px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+#contactFormDiv button {
+  background-color: rgb(29, 84, 90);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: black;
+  padding: 10px 20px;
+  width: 120px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: calc(50% - 60px);
+}
+
+#contactFormDiv button:hover {
+  background-color: rgb(39, 117, 126);
+}
+
+/* Custom Pop-up Styling */
+#customPopup {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 240px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: black solid 1px;
+  border-radius: 8px;
+  animation: fadeEffect 0.5s;
+  cursor: move;
+  z-index: 999;
+}
+
+#popupContent {
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  user-select: none;
+}
+
+#popupTitle {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+#popupMessage {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#popupContent button {
+  background-color: cadetblue;
+  color: white;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#popupContent button:hover {
+  background-color: #4682b4;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 998;
+}
+
+@keyframes fadeEffect {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@media (max-width: 1200px) {
+  #contactFormDiv {
+    max-width: 80%;
+  }
+  #contactPageTextSection {
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 490px) {
+  #contactPageText {
+    font-size: 24px;
+  }
+  #customPopup {
+    width: 300px;
+    height: 180px;
+  }
+  
+  #popupTitle {
+    font-size: 28px;
+  }
+  
+  #popupMessage {
+    font-size: 17px;
+  }
+
+  #popupContent {
+    padding: 0px;
+  }
+  
+  #popupContent button {
+    font-size: 15px;
+  }
+}

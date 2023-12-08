@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>
+      bentrz
+    </title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="icon" href="/images/logoV1Teal.png">
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="scripts\header.js"></script>
+    <script src="scripts\aboutPage.js"></script>
+    <script src="scripts\portfolioPage.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body style="background-color: white">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Handjet:wght@300;700&display=swap" rel="stylesheet">
+
+    <!-- HEADER -->
+    <div class="header">
+      <div id="headerBenTrzLogoSection">
+        <a id="headerBenTrzLogoAnchor" href="index.html">
+          <img id="headerBenTrzLogoImage" src="/images/logoV1Teal.png" alt="Bentrz Logo">
+        </a>
+      </div>
+      <div id="headerAboutSection" class="headerSections">
+        <button class="headerTextButton" onclick="openPage('aboutPage', headerPortfolioText);aboutStart()">
+          <span id="headerPortfolioText" class="headerText">
+            About Me
+          </span>
+        </button>
+      </div>
+      <div ID="headerPortfolioSection" class="headerSections">
+        <button class="headerTextButton" onclick="openPage('portfolioPage', headerCertificatesText);portfolioStart()">
+          <span id="headerCertificatesText" class="headerText">
+            Portfolio
+          </span>
+        </button>
+      </div>
+      <div id="headerContactMeSection" class="headerSections">
+        <button class="headerTextButton" onclick="openPage('contactPage', headerContactMeText)">
+          <span id="headerContactMeText" class="headerText">
+            Contact Me
+          </span>
+        </button>
+      </div>
+      <div id="headerLinkedInLogoSection">
+        <a id="headerLinkedInLogoAnchor" href="https://www.linkedin.com/in/ben-trzcinski-990195198/" target="_blank">
+          <img id="headerLinkedInLogoImage" src="/images/linkedInLogo.png" alt="Link to my LinkedIn">
+        </a>
+      </div>
+    </div>
+
+    <!-- LANDING PAGE -->
+    <div id="landingPage">
+      <div id="landingPageHeaderDiv">
+        <h1 id="landingPageHeaderBenTrzText" class="landingPageHeaderText">
+          Ben Trz
+        </h1>
+        <h1 id="landingPageHeaderCinskiText" class="landingPageHeaderText">
+          cinski
+        </h1>
+      </div>
+
+      <div id="landingPageSubHeaderDiv">
+        <h3 id="landingPageSubHeaderTextOne" class="landingPageSubHeaderText">
+          good developer: &nbsp
+        </h3>
+        <h3 id="landingPageSubHeaderTextTwo" class="landingPageSubHeaderText">
+          terrible juggler
+        </h3>
+      </div>
+    </div>
+
+    <script src="scripts\landingPage.js"></script>
+
+    <!-- ABOUT PAGE -->
+    <div id="aboutPage" class="headerPage">
+      <div id="aboutPageLayout">
+        <div id="aboutBioSection">
+          <div id="aboutBioImageSection">
+            <img id="aboutBioImage" src="images/me.png">
+          </div>
+          <div id="aboutBioTextSection" class="aboutPageText">
+            <h1 id="aboutBioTextHeader">
+              Hi, I'm Ben!
+            </h1>
+            <h3 id="aboutBioTextSubHeader">
+              I am a software developer with one years experience working on 
+              all parts of the development stack within a small team. I primarily code in 
+              C++ and C#, and am confident in Object oriented programming as well 
+              as agile methodologies, utilising these languages alongside Git and Jira 
+              to coordinate workflow.
+            </h3>
+          </div>
+        </div>
+        <div id="aboutSkillsSection">
+          <div id="aboutSkillsMaterialSection" class="aboutMaterialSection">
+            <div id="aboutSkillsTitleSection" class="aboutTitleSections">
+              <h1 id="aboutSkillsTitle" class="aboutTitles">
+                My Skills
+              </h1>
+            </div>
+            <div id="aboutSkillsSubTitlesSection" class="aboutSubTitlesSections">
+              <p id="aboutSkillsSubTitleLanguages" class="aboutSkillsSubTitles activeTab" onclick="openSkillsTab('aboutSkillsLanguagesTab')">
+                Languages
+              </p>
+              <p id="aboutSkillsSubTitleTechnical" class="aboutSkillsSubTitles" onclick="openSkillsTab('aboutSkillsTechnicalTab')">
+                Technical
+              </p>
+              <p id="aboutSkillsSubTitlePersonal" class="aboutSkillsSubTitles" onclick="openSkillsTab('aboutSkillsPersonalTab')">
+                Personal
+              </p>
+            </div>
+            <div id="aboutSkillsLanguagesTab" class="aboutSkillsTab activeTab">
+              <div class="aboutTabContents">
+                C++
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsLanguagesCPP" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                C#
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsLanguagesCS" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Python
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsLanguagesPython" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                HTML & CSS
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsLanguagesHTMLCSS" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                JavaScript
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsLanguagesJS" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Matlab
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsLanguagesMatlab" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+            </div>
+            <div id="aboutSkillsTechnicalTab" class="aboutSkillsTab">
+              <div class="aboutTabContents">
+                MVVM
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsTechnicalMVVM" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                OOP
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsTechnicalOOP" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Agile
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsTechnicalAgile" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Git
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsTechnicalGit" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Confluence
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsTechnicalConfluence" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Visual Studio
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsTechnicalVisualStudio" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+            </div>
+            <div id="aboutSkillsPersonalTab" class="aboutSkillsTab">
+              <div class="aboutTabContents">
+                Resillience
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsPersonalResilience" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Commun-ication
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsPersonalCommunication" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Problem Solving
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsPersonalProblemSolving" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Bouldering
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsPersonalBouldering" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+              <div class="aboutTabContents">
+                Tennis
+              </div>
+              <div class="aboutSkillLevelBarOuter">
+                <div id="aboutSkillLevelBarSkillsPersonalTennis" class="aboutSkillLevelBarInner">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="aboutExperienceSection">
+          <div id="aboutExperienceMaterialSection" class="aboutMaterialSection">
+            <div id="aboutExperienceTitleSection" class="aboutTitleSections">
+              <h1 id="aboutExperienceTitle" class="aboutTitles">
+                My Experience
+              </h1>
+            </div>
+            <div id="aboutExperienceSubTitlesSection" class="aboutSubTitlesSections">
+              <p id="aboutExperienceSubTitleProfessional" class="aboutExperienceSubTitles activeTab" onclick="openExperienceTab('aboutExperienceProfessionalTab')">
+                Professional
+              </p>
+              <p id="aboutExperienceSubTitleEducation" class="aboutExperienceSubTitles" onclick="openExperienceTab('aboutExperienceEducationTab')">
+                Education
+              </p>
+            </div>
+            <div id="aboutExperienceProfessionalTab" class="aboutExperienceTab activeTab">
+              <p class="aboutExperienceText">
+                <span class="aboutExperienceJobTitle">Junior Software Developer</span><br>
+                <span class="aboutExperienceCompany">Applied Photophysics</span><br>
+                <span class="aboutExperienceDuration">Mar 2022 - Feb 2023</span><br>
+                <span class="aboutExperienceDescription">Worked as a full stack developer for scientific instruments used in biopharmaceutical innovation and research, contributing to the maintenance of existing products as well as the embedded and back-end development of a new project.</span><br>
+                <span class="aboutExperienceJobTitle">NetLogo Model Design</span><br>
+                <span class="aboutExperienceCompany">Dr Jonathan Bennie</span><br>
+                <span class="aboutExperienceDuration">Aug 2020 - Sep 2020</span><br>
+                <span class="aboutExperienceDescription">Individually researched and developed a model to act as an interactive visual aid for a series of lectures.</span><br>
+                <span class="aboutExperienceJobTitle">Project Assistant</span><br>
+                <span class="aboutExperienceCompany">Dr Jamie Shutler</span><br>
+                <span class="aboutExperienceDuration">Apr 2019 - May 2019</span><br>
+                <span class="aboutExperienceDescription">Worked with a team collecting and compiling relevant rocket launch data with the aim of establishing the total carbon emissions of all historic launches.</span><br>
+                <span class="aboutExperienceJobTitle">Tennis coaching</span><br>
+                <span class="aboutExperienceCompany">MDL Coaching</span><br>
+                <span class="aboutExperienceDuration">2015 - 2018</span><br>
+                <span class="aboutExperienceDescription">Worked with various coaches to help run and organise junior coaching sessions.</span>
+              </p>
+            </div>
+            <div id="aboutExperienceEducationTab" class="aboutExperienceTab">
+              <p class="aboutExperienceText">
+                <span class="aboutExperienceEducationGrade">BSc Mathematical Sciences First Class With Honours</span><br>
+                <span class="aboutExperienceEducationLocation">University of Exeter (2018-2021)</span><br>
+                <span class="aboutExperienceEducationGrade">A Levels in Mathematics (B), Computer Science (C) and Geography (C)</span><br>
+                <span class="aboutExperienceEducationLocation">Warlingham Sixth Form (2016 – 2018)</span><br>
+                <span class="aboutExperienceEducationGrade">12 GCSEs, grades A*- C (6 A*- A)</span><br>
+                <span class="aboutExperienceEducationLocation">Warlingham School (2011 – 2016)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="aboutScrollController">
+          <div id="aboutScrollControllerLineOne">
+          </div>
+          <div id="aboutScrollControllerLineTwo">
+          </div>
+          <div id="aboutScrollControllerLineTwo">
+          </div>
+          <div id="aboutScrollControllerIntro" class="aboutScrollControllerSections">
+            <button class="aboutScrollControllerTextButton" onclick="introScroll()">
+              <span id="aboutScrollControllerIntroText" class="aboutScrollControllerText">
+                Intro
+              </span>
+            </button>
+          </div>
+          <div ID="aboutScrollControllerSkills" class="aboutScrollControllerSections">
+            <button class="aboutScrollControllerTextButton" onclick="skillsScroll()">
+              <span id="aboutScrollControllerSkillsText" class="aboutScrollControllerText">
+                My Skills
+              </span>
+            </button>
+          </div>
+          <div id="aboutScrollControllerExperience" class="aboutScrollControllerSections">
+            <button class="aboutScrollControllerTextButton" onclick="experienceScroll()">
+              <span id="aboutScrollControllerExperienceText" class="aboutScrollControllerText">
+                My Experience
+              </span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PORTFOLIO PAGE -->
+    <div id="portfolioPage" class="headerPage">
+      <div id="portfolioTabs">
+        <div id="portfolioTabOne" class="portfolioTab">
+          <a href="APL.html" id="APLSubPageLink" class="subPageLinks">
+            <img src="images/APLCover.png">
+            <div class="portfolioTabHeader">
+              <h2>
+                Junior Developer at Applied Photophysics
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div id="portfolioTabTwo" class="portfolioTab">
+          <a href="creatingbentrz.html" id="bentrzSubPageLink" class="subPageLinks">
+            <img src="images/MakingWebsiteCover.png">
+            <div class="portfolioTabHeader">
+              <h2>
+                Creating bentrz.com
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div id="portfolioTabThree" class="portfolioTab">
+          <a href="crackTheCase.html" id="crackTheCaseSubPageLink" class="subPageLinks">
+            <img src="images/crackTheCase1.PNG">
+            <div class="portfolioTabHeader">
+              <h2>
+                Crack the Case
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div id="portfolioTabFour" class="portfolioTab">
+          <a href="facebookML.html" id="FBMLSubPageLink" class="subPageLinks">
+            <img src="images/FBML.PNG">
+            <div class="portfolioTabHeader">
+              <h2>
+                Investigating ML Classification Techniques with Facebook Post Data
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div id="portfolioTabFive" class="portfolioTab">
+          <a href="ghostie.html" id="ghostieSubPageLink" class="subPageLinks">
+            <img src="images/ghostie.PNG">
+            <div class="portfolioTabHeader">
+              <h2>
+                Ghostie
+              </h2>
+            </div>
+          </a>
+        </div>
+        <div id="portfolioTabSix" class="portfolioTab">
+          <a href="" id="tbdSubPageLink" class="subPageLinks">
+            <div class="portfolioTabHeader">
+              <h2>
+                More projects in the works...
+              </h2>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    
+
+    <!-- CONTACT PAGE -->
+    <div id="contactPage" class="headerPage">
+      <div id="contactPageLayoutDiv">
+        <div id="contactPageTextSection">
+          <p id="contactPageText">
+            If you would like a copy of my CV or are interested in discussing anything related to development and beyond, don't hesitate to get in touch using the form below.
+          </p>
+        </div>
+        <div id="contactFormDiv">
+          <form id="contactForm" action="https://formspree.io/f/xknldbel" method="POST">
+            <div class="contactFormGroup">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="email@example.com" required>
+            </div>
+            <div class="contactFormGroup">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="10" required></textarea>
+            </div>
+            <button type="submit" <!--onclick="openPopup()"-->Submit</button>
+          </form>
+        </div>
+
+        <div id="overlay"></div>
+
+        <div id="customPopup">
+          <div id="popupContent">
+            <h2 id="popupTitle">Thank You!</h2>
+            <p id="popupMessage">Your message has been submitted.</p>
+            <button <!--onclick="closePopup()"-->Confirm</button>
+          </div>
+        </div>
+
+        <script>
+          window.onbeforeunload = () => {
+            for(const form of document.getElementsByTagName('form')) {
+              form.reset();
+            }
+          }
+        </script>
+
+      </div>
+    </div>
+    
+    <script src="scripts\contactPage.js"></script>
+
+  </body>
+
+</html>
